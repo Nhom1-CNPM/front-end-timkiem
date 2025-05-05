@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root, .App {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  background: #006495;
+  height: 36px;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+  border-bottom: 1px solid white; /* Đường kẻ trắng dưới topbar */
+}
+
+.topbar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-left: 1px solid white;
+  gap: 5px; /* Khoảng cách giữa icon và chữ */
+}
+.icon-img {
+  width: 25px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+
+/* Ô đầu tiên (trống bên trái) */
+.empty-left {
+  width: 60px; /* nhỏ hơn */
+  border-left: none;
+}
+
+/* Ô cuối cùng (trống bên phải) */
+.empty-right {
+  width: 60px; /* rộng hơn */
+  //border-left: none;
+}
+
+/* Ô chứa cờ */
+.flag-box {
+  width: 70px;
+}
+
+/* Lá cờ */
+.flag {
+  width: 40px;
+  height: 25px;
+}
+
+/* Ô chữ "Du Lịch Việt Nam" */
+.text-box {
+  
+  padding: 0 16px;
+  flex-grow: 1; /* Làm cho ô này chiếm không gian còn lại */
+  text-align: left; /* Căn chữ về bên trái */
+  display: flex; /* Sử dụng flex để căn chỉnh */
+  justify-content: flex-start; /* Đảm bảo nội dung nằm bên trái */
+}
+
+/* Ô "Đăng nhập" */
+.login-box {
+  padding: 0 12px;
+}
+
+/* Ô "Đăng ký" */
+.register-box {
+  padding: 0 12px;
+}
+
+
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-evenly; 
+  //justify-content: center;
+  align-items: center;
+  background: #2e79a6;
+  padding: 10px 0;
+  position: relative;
+  gap: 30px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  font-size: 16px; 
+  font-weight: bold; /* Làm chữ đậm */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.arrow {
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+/* Logo */
+.logo {
+  font-family: 'ROG Fonts', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+}
+
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.breadcrumb .arrow {
+  font-size: 14px;
+}
+.breadcrumb-home {
+  font-weight: bold;
+}
+
+/* Search Section */
+.search-section {
+  padding: 40px 60px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.search-section h2 {
+  margin-bottom: 30px;
+  font-size: 34px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  //border-radius: 2px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  //border-radius: 2px;
+}
+
+.search-box button:hover {
+  background-color: #45a049;
+}
+
+/* Footer */
+.footer {
+  padding: 15px 0;
+  text-align: center;
+  background: #222;
+  color: white;
+  font-size: 14px;
+}
+/* Thêm khoảng cách giữa icon và chữ trong topbar */
+
